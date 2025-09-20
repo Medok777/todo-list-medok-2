@@ -28,6 +28,18 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  .chapter {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .task-value {
+    max-width: 450px;
+  }
 }
 
 @media (max-height: 640px) {
@@ -97,3 +109,4 @@
     padding: 0;
   }
 }
+
