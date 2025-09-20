@@ -1,0 +1,99 @@
+@media (max-height: 900px) {
+  .todo-list {
+    padding: 30px;
+
+    height: 600px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .choice {
+    height: 200px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .todo-list {
+    width: 600px;
+    padding: 30px;
+  }
+
+  .choice {
+    height: 300px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media (max-height: 640px) {
+  .todo-list {
+    padding: 20px;
+
+    height: 500px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .choice {
+    height: 200px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .todo-list {
+    width: 335px;
+    padding: 10px;
+  }
+
+  .chapter {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .choice {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    height: 200px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .todo-title h1 {
+    font-size: 20px;
+  }
+
+  .todo-title h1 a {
+    font-size: 20px;
+  }
+
+  .add-tasks h2 {
+    font-size: 30px;
+  }
+
+  .current-time p {
+    font-size: 18px;
+  }
+
+  #time {
+    font-size: 18px;
+  }
+
+  .todo-wrapper {
+    padding: 0;
+  }
+}
