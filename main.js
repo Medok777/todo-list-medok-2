@@ -44,6 +44,7 @@ function addNewTasks(event) {
   taskUlLeft.innerHTML += taskHTML;
   formInput.value = "";
   numberLeftTasks();
+  localStorageTasks()
 }
 
 function numberLeftTasks() {
@@ -69,6 +70,7 @@ function taskButtons(event) {
     deleteBtn.remove();
     numberLeftTasks();
     numberRightTasks();
+    localStorageTasks()
   }
 
   if (doneBtn) {
@@ -90,18 +92,19 @@ function tasksRight(event) {
     deleteBtn.remove();
     numberLeftTasks();
     numberRightTasks();
+    localStorageTasks()
   }
 }
 
-// function localStorageTasks() {
-//   localStorage.setItem("TaskLeft", taskUlLeft.innerHTML);
-//   localStorage.setItem("TaskRight", rightTasks.innerHTML);
-// }
+function localStorageTasks() {
+  localStorage.setItem("TaskLeft", taskUlLeft.innerHTML);
+  localStorage.setItem("TaskRight", rightTasks.innerHTML);
+}
 
-// function showTask() {
-//   taskUlLeft.innerHTML = localStorage.getItem("TaskLeft");
-//   rightTasks.innerHTML = localStorage.getItem("TaskRight");
-// }
+function showTask() {
+  taskUlLeft.innerHTML = localStorage.getItem("TaskLeft");
+  rightTasks.innerHTML = localStorage.getItem("TaskRight");
+}
 
 function currentTime() {
   let date = new Date();
@@ -116,3 +119,4 @@ function currentTime() {
 }
 
 setInterval(currentTime, 1000);
+showTask()
