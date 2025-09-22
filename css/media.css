@@ -108,5 +108,10 @@
   .todo-wrapper {
     padding: 0;
   }
+  
+  .task-value {
+    max-width: 230px;
+  }
 }
+
 
