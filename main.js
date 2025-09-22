@@ -103,7 +103,7 @@ function localStorageTasks() {
 
 function showTask() {
   taskUlLeft.innerHTML = localStorage.getItem("TaskLeft");
-  rightTasks.innerHTML = localStorage.getItem("TaskRight");
+  // rightTasks.innerHTML = localStorage.getItem("TaskRight");
 }
 
 function currentTime() {
@@ -120,3 +120,4 @@ function currentTime() {
 
 setInterval(currentTime, 1000);
 showTask()
+
